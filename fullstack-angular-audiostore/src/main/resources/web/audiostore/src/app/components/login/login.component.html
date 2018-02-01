@@ -4,21 +4,13 @@
 		  <mat-grid-tile	[colspan]="1"></mat-grid-tile>
 		  <mat-grid-tile	[colspan]="4">
 		  		<form (ngSubmit)="onSubmit()">
-		  		
-		  			<mat-form-field>
-						<input matInput placeholder="Input">
-	    			</mat-form-field>
-					
-					<mat-form-field>
-						<textarea matInput placeholder="Textarea"></textarea>
-					  </mat-form-field>
-		  		
 		  			<mat-form-field class="full-width">
-		  				<input type="text" name="username" id='username' placeholder="Your username" />
+		  				<input matInput [(ngModel)]="credential.username" type="text" name="username" id='username' placeholder="Your username" />
 		  			</mat-form-field> 
 		  			<mat-form-field class="full-width">
-		  				<input type="text" name="password" id='password' placeholder="Your password" />
-		  			</mat-form-field> 
+		  				<input matInput [(ngModel)]="credential.password" type="text" name="password" id='password' placeholder="Your password" />
+		  			</mat-form-field>
+		  			
 		  			<button mat-raised-button type="submit" class="mat-primary">Login</button>
 		  		</form>
 		  </mat-grid-tile>
