@@ -46,7 +46,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 	
 	
 	@Autowired
-	public void configureGlobal(AuthenticationManagerBuilder authBuilder){
+	public void configureGlobal(AuthenticationManagerBuilder authBuilder) throws Exception{
 		authBuilder.userDetailsService(userSecurityService).passwordEncoder(passwordEncoder());
 	}
 	
