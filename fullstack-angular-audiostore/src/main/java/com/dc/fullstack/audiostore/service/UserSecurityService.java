@@ -9,6 +9,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import com.dc.fullstack.audiostore.domain.security.User;
+import com.dc.fullstack.audiostore.repository.UserRepository;
 
 @Service
 public class UserSecurityService implements UserDetailsService{
