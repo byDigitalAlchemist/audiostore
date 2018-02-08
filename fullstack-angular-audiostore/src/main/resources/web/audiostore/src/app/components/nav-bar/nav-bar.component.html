@@ -1,4 +1,9 @@
 <mat-toolbar class="mat-primary">
-  <span [style.color]="'white'">ADMIN PORTAL</span>
-  <a mat-button>View Audio List </a>
+  <h3 [style.color]="'white'" >ADMIN PORTAL</h3>
+  <span class="as-spacer"></span>
+  <span [hidden]='!loggedIn'><a mat-button>View Audio List</a></span>
+  <span [hidden]='!loggedIn'><a mat-button>Add Audio</a></span>
+  <span [hidden]='!loggedIn'><a mat-button>Logout</a></span>
 </mat-toolbar>
+
+<button mat-raised-button class="mat-warn" (click)="toggleDisplay()">Toggle</button>
