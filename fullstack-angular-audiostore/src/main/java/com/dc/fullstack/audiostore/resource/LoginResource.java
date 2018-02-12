@@ -15,7 +15,7 @@ import com.dc.fullstack.audiostore.service.UserService;
 @RestController
 public class LoginResource {
 
-	@Autowired
+	//@Autowired
 	private UserService userService;
 	
 	@RequestMapping("/token")
